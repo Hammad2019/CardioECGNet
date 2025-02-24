@@ -1,0 +1,107 @@
+# CardioECGNet: Automated ECG Signal Classification
+
+This repository contains the implementation of **CardioECGNet**, a novel deep learning architecture designed for accurate and automated ECG signal classification across diverse cardiac conditions. The model is described in the paper:
+
+> **CardioECGNet: A Novel Deep Learning Architecture for Accurate and Automated ECG Signal Classification Across Diverse Cardiac Conditions**  
+> *Published in:* Biomedical Signal Processing and Control, Volume 106, August 2025, Article No. 107720  
+> *Authors:* Mohamed Hammad, Mohammed ElAffendi, Ahmed A. Abd El-Latif
+
+---
+
+## 🚀 **Features**
+- Load and preprocess ECG data
+- Train the deep learning model with data augmentation
+- Evaluate model performance using metrics such as accuracy, precision, recall, specificity, and F1 score
+- Visualize confusion matrices, performance metrics, and layer activations
+- Perform statistical analysis using T-test and bootstrap methods
+
+---
+
+## 📂 **Directory Structure**
+```plaintext
+├── TestCallCastumFun.m  # Custom function that defines the layer graph
+├── main.m               # Main script to train and evaluate the model
+└── F:/ECG Data/COVID-19 # Folder containing ECG image datasets
+```
+
+---
+
+## 💾 **Dataset**
+- Ensure that ECG data is stored in `F:/ECG Data/COVID-19` with subfolders named after each class (e.g., `covid-19` and `normal`).
+- The script uses `imageDatastore` to load the data.
+
+---
+
+## 💻 **Requirements**
+- MATLAB R2019b or later
+- Deep Learning Toolbox
+
+---
+
+## ⚙️ **Setup Instructions**
+1. Clone the repository:
+```bash
+ git clone https://github.com/username/CardioECGNet.git
+```
+2. Open MATLAB and navigate to the project directory.
+3. Ensure that `TestCallCastumFun.m` is in the same directory.
+4. Run the main script:
+```matlab
+ main
+```
+
+---
+
+## 🧩 **How to Use**
+- **Training:** The script trains the model using ECG images, applies data augmentation, and saves training progress.
+- **Evaluation:** After training, the model predicts labels for the test dataset and calculates performance metrics.
+- **Visualization:** Generates confusion matrices, layer activations, and performance metric plots.
+
+---
+
+## 📊 **Performance Metrics**
+- Accuracy
+- Precision
+- Recall
+- Specificity
+- Sensitivity
+- F1 Score
+
+---
+
+## 📈 **Statistical Analysis**
+- Two-sample T-test to compare predicted probabilities between classes
+- Bootstrap analysis with 95% confidence intervals
+
+---
+
+## ⚠️ **Important Notes**
+- Ensure that the dataset path is correctly set in the script.
+- Modify the layer names in `layersToVisualize` if custom layers are used.
+- For best results, adjust hyperparameters such as learning rate, batch size, and number of epochs.
+
+---
+
+## 📜 **Citation**
+If you use this code in your research, please cite the following paper:
+```
+@article{CardioECGNet2025,
+  title={CardioECGNet: A Novel Deep Learning Architecture for Accurate and Automated ECG Signal Classification Across Diverse Cardiac Conditions},
+  author={Hammad, Mohamed and ElAffendi, Mohammed and Abd El-Latif, Ahmed A.},
+  journal={Biomedical Signal Processing and Control},
+  volume={106},
+  year={2025},
+  pages={107720}
+}
+```
+
+---
+
+## 💡 **Contact**
+For questions or collaborations, please contact the authors.
+
+---
+
+## 📝 **License**
+This project is licensed under the [MIT License](LICENSE).
+
